@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AI FinSec Lab — 금융 이상탐지 모델 보안 · 인터랙티브 해설</title>
-<meta name="description" content="금융 이상탐지 모델 보안과 적대적 데이터 대응 방안 — 인터랙티브 해설 페이지. 한국어 · Tiếng Việt.">
+<meta name="description" content="금융 이상탐지 모델 보안과 적대적 데이터 대응 방안 — 인터랙티브 해설 페이지. 한국어 · English · 中文 · 日本語 · Oʻzbekcha · Русский · Tiếng Việt.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -89,7 +89,7 @@
   .meta span{border:1px solid var(--rule); border-radius:5px; padding:2px 8px}
   .meta a{color:var(--muted); text-decoration:none; border-bottom:1px dotted var(--rule)}
   .meta a:hover{color:var(--cyan)}
-  .langs{display:flex; gap:.4rem; margin-top:.9rem}
+  .langs{display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.9rem}
   .langs a{font-size:12px; color:var(--muted); text-decoration:none; border:1px solid var(--rule); border-radius:999px; padding:4px 11px}
   .langs a.on{color:var(--amber); border-color:rgba(241,182,70,.5); background:rgba(241,182,70,.08)}
   .langs a:hover{color:var(--text)}
@@ -133,15 +133,31 @@
       </div>
 
       <div class="enter">
-        <a class="btn primary" href="01_adversarial_finance.html">
+        <a class="btn primary".rstrip() href="01_adversarial_finance.html" hreflang="ko">
           <span class="l"><b>한국어로 읽기</b><i>8개 장 · 인터랙티브 실습 3개 · 대결 판정</i></span>
           <span class="go">OPEN →</span>
         </a>
-        <a class="btn" href="01_adversarial_finance.en.html">
+        <a class="btn ".rstrip() href="01_adversarial_finance.en.html" hreflang="en">
           <span class="l"><b>Read in English</b><i>8 chapters · 3 interactive labs · the verdict</i></span>
           <span class="go">OPEN →</span>
         </a>
-        <a class="btn" href="01_adversarial_finance.vi.html">
+        <a class="btn ".rstrip() href="01_adversarial_finance.zh.html" hreflang="zh-CN">
+          <span class="l"><b>用中文阅读</b><i>8 章 · 3 个互动实验 · 最终结论</i></span>
+          <span class="go">OPEN →</span>
+        </a>
+        <a class="btn ".rstrip() href="01_adversarial_finance.ja.html" hreflang="ja">
+          <span class="l"><b>日本語で読む</b><i>全8章 · インタラクティブ実習3つ · 最終判定</i></span>
+          <span class="go">OPEN →</span>
+        </a>
+        <a class="btn ".rstrip() href="01_adversarial_finance.uz.html" hreflang="uz">
+          <span class="l"><b>Oʻzbekcha oʻqish</b><i>8 bob · 3 interaktiv mashq · yakuniy hukm</i></span>
+          <span class="go">OPEN →</span>
+        </a>
+        <a class="btn ".rstrip() href="01_adversarial_finance.ru.html" hreflang="ru">
+          <span class="l"><b>Читать по-русски</b><i>8 глав · 3 интерактивных практикума · вердикт</i></span>
+          <span class="go">OPEN →</span>
+        </a>
+        <a class="btn ".rstrip() href="01_adversarial_finance.vi.html" hreflang="vi">
           <span class="l"><b>Đọc bằng tiếng Việt</b><i>8 phần · 3 bài thực hành tương tác · phán quyết</i></span>
           <span class="go">MỞ →</span>
         </a>
