@@ -53,7 +53,7 @@
 | 4 | 4대 공격 유형 | 거래량·가격·금액·추세 조작 | 분포 곡선 3종 전환 |
 | 5 | 모델별 붕괴 | SVM·RF·LR·LSTM의 Acc/Recall 변화 | Clean / 8.1% 주입 / KS 필터 |
 | 6 | 통계 필터링 | KS·T·F 검정의 차단율 | — |
-| 대결 | 초파리 vs Money-Robo | RF+KS 0.94 vs LSTM 0.00 판정 | 결과 검증 버튼 |
+| 대결 | 초파리 vs 주판봇 | RF+KS 0.94 vs LSTM 0.00 판정 | 결과 검증 버튼 |
 | 결론 | 방어 전략 | RF 앙상블 + KS 필터 선제 배치 | — |
 | K | 지식 색인 | 개념 10건 검색·필터 | 검색창, 필터 버튼 |
 | O | 꾸러미 | 지식 그래프·서지 추출 | ZIP / BibTeX 복사 / Turtle |
@@ -109,7 +109,7 @@
 | `og_01.png` | 1200×630 | 공유 미리보기 | 중앙 게이트 + 4인, 축소 판독 대응 |
 | `thumb_01.png` | 600×400 | 첫 화면 카드 | `bg_01` 우측 3:2 크롭 |
 
-그림체는 16비트 RPG 픽셀아트(굵은 외곽선, 2~3단 명암)로 통일했고, 캐릭터는 **박사 · 조수 · 초파리 연구원 · Money-Robo** 네 명입니다. 말풍선 아바타는 캐릭터 원화를 잘라 160×160으로 넣었습니다.
+그림체는 16비트 RPG 픽셀아트(굵은 외곽선, 2~3단 명암)로 통일했고, 캐릭터는 **박사 · 조수 · 초파리 연구원 · 주판봇** 네 명입니다. 말풍선 아바타는 캐릭터 원화를 잘라 160×160으로 넣었습니다.
 
 ## 데이터와 이미지 — 무엇이 실측이고 무엇이 설명용인가
 
@@ -164,7 +164,7 @@ Written by Ahn Sangsun (CEO, M-Robo Co., Ltd.) · original paper DOI [10.22987/j
 
 **Language.** Switch with the 🌐 box in the top bar, the 🌐 button in the bottom-right corner, or `?lang=`. Your choice is stored in `localStorage['fds01_lang']` and the `#section` anchor is kept. Automatic switching happens only on the Korean original, and only after a `HEAD` request confirms the translated file exists, so a missing translation never produces a 404.
 
-**Structure (one page = 8 chapters + 2 appendices).** 1 Comic: what adversarial data really is · 2 The three-step money-laundering script · 3 The imbalance trap and why SMOTE does not help · 4 Four attack types (switch the distribution) · 5 Model collapse (clean / 8.1% injected / KS-filtered) · 6 Statistical filtering · Showdown: fly vs Money-Robo (verify button) · Conclusion · K Knowledge index (search, filter) · O Toolkit (ZIP, BibTeX, Turtle).
+**Structure (one page = 8 chapters + 2 appendices).** 1 Comic: what adversarial data really is · 2 The three-step money-laundering script · 3 The imbalance trap and why SMOTE does not help · 4 Four attack types (switch the distribution) · 5 Model collapse (clean / 8.1% injected / KS-filtered) · 6 Statistical filtering · Showdown: fly vs AbaBot (verify button) · Conclusion · K Knowledge index (search, filter) · O Toolkit (ZIP, BibTeX, Turtle).
 
 **Key numbers (measured in the paper).** KS-test blocks **94.59%** of adversarial data; T-test 73.96%; F-test 0.00%. LSTM recall after attack **0.00**; Random Forest recall 0.94 → 0.98. Imbalance 89.9% : 10.1%, adversarial injection 8.1%.
 
@@ -190,7 +190,7 @@ Written by Ahn Sangsun (CEO, M-Robo Co., Ltd.) · original paper DOI [10.22987/j
 
 **语言切换。** 可使用顶部菜单右侧的 🌐 选择框、右下角的 🌐 按钮，或在地址后加 `?lang=`。选择保存在 `localStorage['fds01_lang']`，`#章节` 位置保持不变。自动跳转只在韩文原文上发生，并且先用 `HEAD` 确认译文文件存在，因此不会出现 404。
 
-**结构（一页 = 8 章 + 2 个附录）。** 1 漫画：对抗数据的本质 · 2 洗钱三步剧本 · 3 不平衡陷阱与 SMOTE 无用 · 4 四类攻击（切换分布） · 5 模型崩塌（干净 / 注入 8.1% / KS 过滤） · 6 统计过滤 · 对决：果蝇 vs Money-Robo（验证按钮） · 结论 · K 知识索引（搜索、过滤） · O 资料包（ZIP、BibTeX、Turtle）。
+**结构（一页 = 8 章 + 2 个附录）。** 1 漫画：对抗数据的本质 · 2 洗钱三步剧本 · 3 不平衡陷阱与 SMOTE 无用 · 4 四类攻击（切换分布） · 5 模型崩塌（干净 / 注入 8.1% / KS 过滤） · 6 统计过滤 · 对决：果蝇 vs 算盘宝（验证按钮） · 结论 · K 知识索引（搜索、过滤） · O 资料包（ZIP、BibTeX、Turtle）。
 
 **核心数字（论文实测）。** KS 检验拦截 **94.59%** 的对抗数据；T 检验 73.96%；F 检验 0.00%。攻击后 LSTM 召回率 **0.00**；随机森林召回率 0.94 → 0.98。不平衡 89.9% : 10.1%，对抗数据注入 8.1%。
 
@@ -216,7 +216,7 @@ Written by Ahn Sangsun (CEO, M-Robo Co., Ltd.) · original paper DOI [10.22987/j
 
 **言語の切り替え。** 上部メニュー右の 🌐 選択ボックス、右下の 🌐 ボタン、またはアドレスの末尾に `?lang=` を付ける。選択は `localStorage['fds01_lang']` に保存され、`#セクション` の位置も保たれる。自動切り替えは韓国語の原文でのみ働き、しかも `HEAD` で翻訳ファイルの存在を確認してから移動するので、404 は起きない。
 
-**構成（1ページ = 8章 + 付録2つ）。** 1 コミック：敵対的データの本質 · 2 資金洗浄の三段階シナリオ · 3 不均衡の罠とSMOTEの無用 · 4 四大攻撃類型（分布を切り替え） · 5 モデルの崩壊（クリーン／8.1%注入／KSフィルタ） · 6 統計フィルタ · 対決：ハエ対Money-Robo（検証ボタン） · 結論 · K 知識索引（検索・フィルタ） · O パッケージ（ZIP・BibTeX・Turtle）。
+**構成（1ページ = 8章 + 付録2つ）。** 1 コミック：敵対的データの本質 · 2 資金洗浄の三段階シナリオ · 3 不均衡の罠とSMOTEの無用 · 4 四大攻撃類型（分布を切り替え） · 5 モデルの崩壊（クリーン／8.1%注入／KSフィルタ） · 6 統計フィルタ · 対決：ハエ対アバボット（検証ボタン） · 結論 · K 知識索引（検索・フィルタ） · O パッケージ（ZIP・BibTeX・Turtle）。
 
 **主要な数字（論文の実測）。** KS検定は敵対的データの **94.59%** を遮断。T検定は73.96%、F検定は0.00%。攻撃後のLSTM再現率は **0.00**、Random Forestの再現率は0.94 → 0.98。不均衡は89.9% : 10.1%、敵対的データの注入率は8.1%。
 
@@ -242,7 +242,7 @@ Muallif: Ahn Sangsun (M-Robo kompaniyasi rahbari) · asl maqola DOI [10.22987/ji
 
 **Tilni almashtirish.** Yuqori menyuning oʻng tomonidagi 🌐 tanlash maydoni, pastki oʻng burchakdagi 🌐 tugmasi yoki manzil oxiriga `?lang=` qoʻshish orqali. Tanlov `localStorage['fds01_lang']` da saqlanadi, `#boʻlim` joyi ham saqlanib qoladi. Avtomatik oʻtish faqat koreyscha asl nusxada ishlaydi va avval `HEAD` soʻrovi bilan tarjima fayli borligini tekshiradi — shuning uchun 404 boʻlmaydi.
 
-**Tuzilma (bir sahifa = 8 bob + 2 ilova).** 1 Komiks: qarshi maʼlumotlarning mohiyati · 2 Pul yuvishning uch bosqichli syenariysi · 3 Nomutanosiblik tuzogʻi va SMOTE ning foydasizligi · 4 Toʻrtta hujum turi (taqsimotni almashtirish) · 5 Modellarning qulashi (toza / 8.1% kiritilgan / KS filtri) · 6 Statistik filtr · Bellashuv: drozofila va Money-Robo (tekshirish tugmasi) · Xulosa · K Bilim indeksi (qidirish, filtrlash) · O Toʻplam (ZIP, BibTeX, Turtle).
+**Tuzilma (bir sahifa = 8 bob + 2 ilova).** 1 Komiks: qarshi maʼlumotlarning mohiyati · 2 Pul yuvishning uch bosqichli syenariysi · 3 Nomutanosiblik tuzogʻi va SMOTE ning foydasizligi · 4 Toʻrtta hujum turi (taqsimotni almashtirish) · 5 Modellarning qulashi (toza / 8.1% kiritilgan / KS filtri) · 6 Statistik filtr · Bellashuv: drozofila va AbaBot (tekshirish tugmasi) · Xulosa · K Bilim indeksi (qidirish, filtrlash) · O Toʻplam (ZIP, BibTeX, Turtle).
 
 **Asosiy raqamlar (maqolada oʻlchangan).** KS-test qarshi maʼlumotlarning **94.59%** ini toʻsadi; T-test 73.96%; F-test 0.00%. Hujumdan keyin LSTM toʻliqligi **0.00**, Random Forest toʻliqligi 0.94 → 0.98. Nomutanosiblik 89.9% : 10.1%, qarshi maʼlumot ulushi 8.1%.
 
@@ -268,7 +268,7 @@ Muallif: Ahn Sangsun (M-Robo kompaniyasi rahbari) · asl maqola DOI [10.22987/ji
 
 **Переключение языка.** Поле 🌐 в правой части верхнего меню, кнопка 🌐 в правом нижнем углу или `?lang=` в конце адреса. Выбор хранится в `localStorage['fds01_lang']`, якорь `#раздел` сохраняется. Автопереключение работает только на корейском оригинале и лишь после `HEAD`-запроса, подтверждающего наличие перевода, поэтому 404 не возникает.
 
-**Структура (одна страница = 8 глав + 2 приложения).** 1 Комикс: суть состязательных данных · 2 Трёхшаговый сценарий отмывания денег · 3 Ловушка дисбаланса и бесполезность SMOTE · 4 Четыре типа атак (переключение распределения) · 5 Обвал моделей (чистые / 8.1% внедрённых / фильтр KS) · 6 Статистическая фильтрация · Поединок: дрозофила против Money-Robo (кнопка проверки) · Вывод · K Индекс знаний (поиск, фильтры) · O Пакет данных (ZIP, BibTeX, Turtle).
+**Структура (одна страница = 8 глав + 2 приложения).** 1 Комикс: суть состязательных данных · 2 Трёхшаговый сценарий отмывания денег · 3 Ловушка дисбаланса и бесполезность SMOTE · 4 Четыре типа атак (переключение распределения) · 5 Обвал моделей (чистые / 8.1% внедрённых / фильтр KS) · 6 Статистическая фильтрация · Поединок: дрозофила против АбаБота (кнопка проверки) · Вывод · K Индекс знаний (поиск, фильтры) · O Пакет данных (ZIP, BibTeX, Turtle).
 
 **Ключевые числа (измерены в статье).** KS-тест блокирует **94.59%** состязательных данных; T-тест — 73.96%; F-тест — 0.00%. Полнота LSTM после атаки **0.00**; полнота Random Forest 0.94 → 0.98. Дисбаланс 89.9% : 10.1%, доля внедрённых состязательных данных 8.1%.
 
@@ -328,7 +328,7 @@ Ahn Sangsun (Giám đốc điều hành, M-Robo Co., Ltd.) · Bài gốc: *Mirae
 | 4 | Bốn kiểu tấn công | Thao túng khối lượng, giá, giá trị, xu hướng | Đổi 3 dạng đường cong |
 | 5 | Mô hình sụp đổ | Acc/Recall của SVM, RF, LR, LSTM | Clean / chèn 8,1% / lọc KS |
 | 6 | Lọc bằng thống kê | Tỉ lệ chặn của KS, T, F | — |
-| Đối đầu | Ruồi giấm vs Money-Robo | RF+KS 0,94 so với LSTM 0,00 | Nút kiểm chứng kết quả |
+| Đối đầu | Ruồi giấm vs AbaBot | RF+KS 0,94 so với LSTM 0,00 | Nút kiểm chứng kết quả |
 | Kết luận | Chiến lược phòng thủ | Đặt ensemble RF + bộ lọc KS lên trước | — |
 | K | Chỉ mục tri thức | Tìm và lọc 10 khái niệm | Ô tìm kiếm, nút lọc |
 | O | Gói dữ liệu | Trích xuất đồ thị tri thức, thư mục | ZIP / sao chép BibTeX / Turtle |
@@ -377,7 +377,7 @@ Ahn Sangsun (Giám đốc điều hành, M-Robo Co., Ltd.) · Bài gốc: *Mirae
 | `og_01.png` | 1200×630 | Xem trước khi chia sẻ | Cổng ở giữa cùng bốn nhân vật, đọc rõ khi thu nhỏ |
 | `thumb_01.png` | 600×400 | Thẻ trang đầu | Cắt 3:2 bên phải của `bg_01` |
 
-Toàn bộ hình theo phong cách pixel art RPG 16-bit (viền đậm, 2–3 lớp sáng tối). Bốn nhân vật: **Tiến sĩ · Trợ lý · Nhà nghiên cứu Ruồi giấm · Money-Robo**. Ảnh đại diện trong bong bóng thoại được cắt 160×160 từ hình gốc.
+Toàn bộ hình theo phong cách pixel art RPG 16-bit (viền đậm, 2–3 lớp sáng tối). Bốn nhân vật: **Tiến sĩ · Trợ lý · Nhà nghiên cứu Ruồi giấm · AbaBot**. Ảnh đại diện trong bong bóng thoại được cắt 160×160 từ hình gốc.
 
 ## Dữ liệu và hình ảnh — đâu là số thật, đâu là minh hoạ
 
